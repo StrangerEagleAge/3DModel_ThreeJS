@@ -2,12 +2,141 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   background-color: #000;
+
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.7s;
+}
+
+a:hover {
+  text-shadow: 0px 0px 15px #ffd700;
+  color: #ffd700;
+  transition: all 0.3s;
+}
+
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 20px;
+}
+
+
+
+.section {
+  width: 100%;
+  height: 100%;
+}
+
+.section2 {
+  margin-top: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.section2 {
+  position: relative;
 }
 
 header {
-  margin-top: 3em;
+  transition: all 0.3s;
+  z-index: 2;
+  width: 100%;
+  height: 50px;
+  /*
+  background-color: aqua;
+  */
+  background-color: #000;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+
+.header_inner {
+  height: 50px;
   text-align: center;
+  color: #fff;
+
+  width: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  /*
+  background-color: blueviolet;
+  */
+}
+
+.header_inner,
+ul {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+li {
+  padding: 10px;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.block {
   color: white;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.block2 {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.block_text {
+  color: white;
+  z-index: 1;
+  width: 45%;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+.block_text2 {
+  color: white;
+  z-index: 1;
+  width: 45%;
+  /*height: 100%;*/
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  /*
+  top: 100%;
+  */
+
 }
 
 header h1 {
@@ -20,5 +149,13 @@ header h1 {
   height: 100vh !important;
   position: absolute;
   top: 0;
+  left: 0;
+}
+
+#container3D2 canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute;
+  top: 100%;
   left: 0;
 }
